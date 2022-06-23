@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WPF_SHQueryRecycleBin"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock FontSize="18" FontWeight="Bold" Text="ごみ箱のサイズ: " />
+        <TextBlock FontSize="18" FontWeight="Bold" Text="{Binding RecycleBinSize}" />
+    </StackPanel>
 </Window>
