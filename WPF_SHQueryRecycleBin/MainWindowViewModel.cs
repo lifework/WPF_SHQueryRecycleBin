@@ -13,10 +13,11 @@ namespace WPF_SHQueryRecycleBin
     {
         public event PropertyChangedEventHandler? PropertyChanged;
         public long RecycleBinSize { get; set; }
+        public string RecycleBinSizeBinary { get; set; }
 
         public MainWindowViewModel()
         {
-            RecycleBinSize = GetRecycleBinSize();
+            SetRecycleBinSize();
         }
 
         // SHQueryRecycleBinW function (shellapi.h)
@@ -34,14 +35,15 @@ namespace WPF_SHQueryRecycleBin
 
         // Get A Recycle Bin Size And File Count
         // https://www.dreamincode.net/forums/topic/365687-Get-a-recycle-bin-size-and-file-count/
-        public long GetRecycleBinSize()
+        public void SetRecycleBinSize()
         {
             SHQUERYRBINFO query = new SHQUERYRBINFO();
             query.cbSize = (ulong) Marshal.SizeOf(query.GetType());
             SHQueryRecycleBin(null, ref query);
 
             Debug.WriteLine($"SHQueryRecycleBin: Size = {query.i64Size}, NumItems = {query.i64NumItems}");
-            return query.i64Size;
+            RecycleBinSize = query.i64Size;
+            RecycleBinSizeBinary = Convert.ToString(query.i64Size, 2);
         }
     }
 }
