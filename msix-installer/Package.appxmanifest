@@ -9,7 +9,7 @@
   <Identity
     Name="dc959043-f46f-4c83-88a5-cefe5b0373dd"
     Publisher="CN=kobayashi"
-    Version="1.0.1.0" />
+    Version="1.0.2.0" />
 
   <Properties>
     <DisplayName>WPF_SHQueryRecycleBin</DisplayName>
