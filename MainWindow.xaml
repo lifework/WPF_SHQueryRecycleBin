@@ -8,6 +8,6 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
         <TextBlock FontSize="18" FontWeight="Bold" Text="ごみ箱のサイズ: " />
-        <TextBlock FontSize="18" FontWeight="Bold" Text="{Binding RecycleBinSize}" />
+        <TextBox FontSize="18" FontWeight="Bold" Text="{Binding RecycleBinSize}" Width="200" HorizontalContentAlignment="Right"/>
     </StackPanel>
 </Window>
