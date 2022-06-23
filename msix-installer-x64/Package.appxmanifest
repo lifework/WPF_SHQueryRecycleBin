@@ -7,9 +7,9 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="dc959043-f46f-4c83-88a5-cefe5b0373dd"
+    Name="617330ca-18f4-4117-848a-0884171a0d11"
     Publisher="CN=kobayashi"
-    Version="1.0.4.0" />
+    Version="1.0.14.0" />
 
   <Properties>
     <DisplayName>WPF_SHQueryRecycleBin</DisplayName>
@@ -32,7 +32,7 @@
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
         DisplayName="WPF_SHQueryRecycleBin"
-        Description="msix-installer"
+        Description="msix-installer-x64"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
