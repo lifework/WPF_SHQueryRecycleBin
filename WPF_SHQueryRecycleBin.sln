@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_SHQueryRecycleBin", "WPF_SHQueryRecycleBin\WPF_SHQueryRecycleBin.csproj", "{A0376B35-C20F-4B32-9A91-E74527F0C8B5}"
 EndProject
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "msix-installer", "msix-installer-x64\msix-installer.wapproj", "{678D126E-00C5-40F8-9D3C-CA396E99BB0C}"
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "msix-installer", "msix-installer\msix-installer.wapproj", "{678D126E-00C5-40F8-9D3C-CA396E99BB0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
